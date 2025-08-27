@@ -1,7 +1,6 @@
-{
-  "name": "Emunadi Blog",
+"name": "Emunadi",
   "short_name": "Emunadi",
-  "start_url": "https://view.emunadi.in.net/?source=pwa",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2196f3",
