@@ -2,8 +2,8 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("emunadi-cache").then(cache => {
       return cache.addAll([
-        "/",
-        "/?m=1"
+        "/"
+
       ]);
     })
   );
