@@ -1,18 +1,7 @@
-self.addEventListener("install", event => {
-  event.waitUntil(
-    caches.open("emunadi-cache").then(cache => {
-      return cache.addAll([
-        "/"
+// sw.js (minimal, सिर्फ PWA install prompt के लिए)
+// Offline cache या कुछ नहीं करेगा
 
-      ]);
-    })
-  );
+self.addEventListener("fetch", () => {
+  // intentionally empty
 });
 
-self.addEventListener("fetch", event => {
-  event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
-    })
-  );
-});
